@@ -1,0 +1,35 @@
+/* playgame.css */
+.playGameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--quatenaryColor);
+    min-height: 100vh;
+    color: var(--blackColor);
+  }
+  
+  .gameOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .playButton, .resetButton, .settingsButton {
+    padding: 15px 25px;
+    font-size: var(--navFont);
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .playButton:hover, .resetButton:hover, .settingsButton:hover {
+    background-color: var(--blackColor);
+    transform: scale(1.05);
+  }
+  

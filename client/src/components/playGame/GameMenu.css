@@ -1,0 +1,39 @@
+/* GameMenu.css */
+.gameMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: var(--quatenaryColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .menuItem {
+    margin: 10px 0;
+  }
+  
+  .menuLabel {
+    font-weight: bold;
+  }
+  
+  .menuValue {
+    margin-left: 10px;
+  }
+  
+  .logoutButton, .quizButton, .eventsButton, .adsButton {
+    padding: 10px 20px;
+    font-size: var(--navFont);
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .logoutButton:hover, .quizButton:hover, .eventsButton:hover, .adsButton:hover {
+    background-color: var(--blackColor);
+    transform: scale(1.05);
+  }
+  

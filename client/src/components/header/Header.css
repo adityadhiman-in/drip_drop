@@ -1,0 +1,31 @@
+
+header {
+    background-color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    border-radius: .5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav li a {
+    font-size: var(--smallFont);
+    color: var(--whiteColor);
+}
+
+.logo a h1 {
+    font-size: var(--medFont);
+    color: var(--whiteColor);
+}

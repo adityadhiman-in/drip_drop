@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: var(--blackColor);
+    font-family: "Inter", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--quatenaryColor);
+}
+
+:root {
+    --primaryColor: #16423C;
+    --secondaryColor: #6A9C89;
+    --tertiaryColor: #C4DAD2;
+    --quatenaryColor: #E9EFEC;
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --bigFont: 5rem;
+    --medFont: 3rem;
+    --smallFont: 1.25rem;
+    --navFont: 1rem
+}
+
+.mainContent {
+    padding: 2% 4%;
+}
+
+.introContent {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.introContent h1 {
+    font-size: var(--bigFont);
+    font-weight: 800;
+}
+
+.introContent p {
+    padding-top: 20px;
+    font-size: var(--smallFont);
+}
+
+.getStarted {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 10px 20px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.introContentII {
+    display: none;
+}
+
+.detailsContainer {
+    width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.detail-item {
+    border: 2px solid var(--primaryColor);
+}
