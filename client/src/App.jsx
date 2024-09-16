@@ -9,8 +9,10 @@ import Story from './components/story/Story.jsx';
 import Dashboard from './components/dashboard/Dashboard.jsx';
 import Login from './components/login/Login.jsx';
 import Signup from './components/signup/Signup.jsx';
+import GameNavbar from './gameComponents/GameNavbar/GameNavbar.jsx';
 
 function App() {
+  
   return (
     <Router>
       <div className="App">

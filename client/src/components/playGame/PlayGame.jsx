@@ -1,49 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import GameMenu from './GameMenu.jsx';
+import React, { useState } from 'react';
+import GameNavbar from '../../gameComponents/GameNavbar/GameNavbar.jsx';
 import './PlayGame.css';
 
 function PlayGame() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const [gameStarted, setGameStarted] = useState(true);
-  const navigate = useNavigate();
+  // Initialize state for the game
+  const [game, setGame] = useState(false);
 
-  useEffect(() => {
-    async function checkLoginStatus() {
-      try {
-        const response = await fetch('/api/check-login');
-        const data = await response.json();
-        setIsLoggedIn(data.loggedIn);
-      } catch (error) {
-        console.error('Error checking login status:', error);
-      }
-    }
-    checkLoginStatus();
-  }, []);
-
-  const handleStartGame = () => {
-    setGameStarted(true);
-  };
-
-  if (!isLoggedIn) {
-    navigate('/login');
-    return null;
+  // Handler for the Play button click
+  function handleClick() {
+    setGame(true);
   }
-
+ 
   return (
     <div className="playGameContainer">
-      {gameStarted ? (
-        <GameMenu />
-      ) : (
-        <div className="gameOptions">
-          <button onClick={handleStartGame} className="playButton">Play</button>
-          <button className="resetButton">Reset</button>
-          <button className="settingsButton">Settings</button>
-        </div>
-      )}
+      <div className="gameOptions">
+        {/* Render the GameNavbar only if the game state is true */}
+        {game && (<GameNavbar/> )}
+        
+        {/* Conditionally render buttons based on the game state */}
+        {!game && (
+          <>
+            <button onClick={handleClick}  className="settingsButton bg-[#16423C]">Play</button>
+            <button onClick={()=>{alert("Game will reset!")}} className="settingsButton">Reset</button>
+            <button onClick={()=>{alert("settings will open!")}} className="settingsButton">Settings</button>
+          </>
+        )}
+      </div>
       {/* Main game content can be rendered here if needed */}
     </div>
   );
 }
 
 export default PlayGame;
+
+
+
+
+
+
+
+
+// 033050

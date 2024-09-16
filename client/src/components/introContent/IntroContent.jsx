@@ -13,7 +13,7 @@ function Home() {
       <div className="introContent">
         <h1>Welcome to Drip Drop</h1>
         <p>A real-life based storyline game to educate people towards ground water conservation with multiple exciting features and rewards system</p>
-        <button className="getStarted" onClick={handleButtonClick}>
+        <button className="getStarted hover:bg-black" onClick={handleButtonClick}>
           Get Started With Story
         </button>
       </div>
