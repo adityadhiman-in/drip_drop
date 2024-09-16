@@ -11,6 +11,7 @@ function Header() {
       try {
         const response = await fetch('/api/auth/status');
         const data = await response.json();
+        console.log(data)
         setIsLoggedIn(data.loggedIn);
       } catch (error) {
         console.error('Error fetching login status:', error);

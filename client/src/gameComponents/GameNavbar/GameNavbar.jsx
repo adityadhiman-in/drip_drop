@@ -15,9 +15,15 @@ const {timer, setTimer} = useState(60);
         </div>
 
         <div className='bucket'>
+<<<<<<< HEAD
           <i class="fa-solid fa-fill-drip text-blue-500"></i>
         
           <div class="bg-blue-100 my-2">
+=======
+          <i className="fa-solid fa-fill-drip text-blue-500"></i>
+        
+          <div className="bg-blue-100 my-2">
+>>>>>>> da37ccd36c2e85c95ec95ac83ebd966beb9092ab
             <div className='bg-blue-500 h-[10px] w-1/2'></div>
           </div>
         </div>

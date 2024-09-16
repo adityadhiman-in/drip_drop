@@ -9,7 +9,11 @@ import Story from './components/story/Story.jsx';
 import Dashboard from './components/dashboard/Dashboard.jsx';
 import Login from './components/login/Login.jsx';
 import Signup from './components/signup/Signup.jsx';
+<<<<<<< HEAD
 import GameNavbar from './gameComponents/GameNavbar/GameNavbar.jsx';
+=======
+// import GameNavbar from './gameComponents/GameNavbar/GameNavbar.jsx';
+>>>>>>> da37ccd36c2e85c95ec95ac83ebd966beb9092ab
 
 function App() {
   
