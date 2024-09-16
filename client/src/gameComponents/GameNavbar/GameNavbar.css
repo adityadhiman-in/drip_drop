@@ -1,0 +1,64 @@
+body{
+    height: 140vh;
+    width: 100vw;
+}
+.gameHeader{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5rem;
+    width: 63.5vw;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.stats i{
+    font-size: xx-large;
+}
+
+
+.eventsContainer{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.eventItem{
+    border: 2px solid var(--secondaryColor);
+    border-radius: .5rem;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+.gameWindow{
+    margin-top: 5rem;
+    padding: 20px 5px;
+    width: 63.5vw;
+    height: 60vh;
+    border-radius: 1rem;
+    background-image: url(https://images.creativemarket.com/0.1.0/ps/1367864/910/606/m2/fpnw/wm1/axitdzjl5bugfl8vjguwoem1lcz5ursfrkcozwvrozfetnmzxijpexjtmkbovsju-.jpg?1465980236&s=e334fd0ce2a52935a9e52c0c85a897f0);
+    background-position: center;
+    background-size: cover;
+}
+.gameWindow h1{
+ font-size: 3rem;
+    color: var(--whiteColor);
+    font-weight: 800;
+}
+.gameWindow h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+.gameAssets{
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.gameAssets i{
+   font-size: 6rem;
+}
