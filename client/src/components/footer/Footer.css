@@ -7,4 +7,9 @@ footer {
     color: white;
     text-align: center;
     font-size: 1.15rem;
+    background: var(--primaryColor);
+    padding: 20px;
+}
+footer p{
+    color: var(--whiteColor);
 }
