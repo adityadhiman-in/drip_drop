@@ -34,9 +34,36 @@ Ensure you have the following installed:
 - MongoDB
 - NPM or Yarn
 
+
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/drip-drop-game.git
    ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd your-repository-name
+   ```
+
+3. Install Dependencies
+   ```
+   npm i
+   ```
+4. Start the server
+   ```
+   node server.js or nodemon server.js
+   ```
+
+## Contact
+
+Feel free to reach out if you have any questions or suggestions!
+
+- [Website](https://adityadhiman.in)
+- [GitHub](https://github.com/adityadhiman-in)
+- [LinkedIn](https://www.linkedin.com/in/adityadhiman-in)
+
+Made with ❤️ by [Aditya Dhiman](https://adityadhiman.in)
