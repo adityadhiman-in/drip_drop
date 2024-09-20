@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+<!-- Include the header -->
+
+<main class="profile-container">
+  <section class="profile-section">
+    <div class="profile-card">
+      <h2>Welcome, <%= user.username %>!</h2>
+      <p><strong>Email:</strong> <%= user.email %></p>
+      <p>
+        Manage your account and settings from here. You can also view your
+        activity and posts.
+      </p>
+
+      <div class="profile-actions">
+        <a href="/users/edit-profile" class="btn btn-primary">Edit Profile</a>
+        <a href="/users/logout" class="btn btn-danger">Logout</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer.ejs") %>

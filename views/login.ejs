@@ -1,0 +1,13 @@
+<%-include("partials/header.ejs") %>
+<div class="flexBetween">
+  <form action="/users/login" method="POST">
+    <h1>Login</h1>
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+    <p>
+      Don't have one? <b><a href="/users/signup">Create here</a></b>
+    </p>
+  </form>
+</div>
+<%-include("partials/footer.ejs") %>
