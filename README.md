@@ -34,13 +34,12 @@ Ensure you have the following installed:
 - MongoDB
 - NPM or Yarn
 
-
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/drip-drop-game.git
+   git clone https://github.com/adityadhiman/drip-drop.git
    ```
 
 2. Navigate into the project directory:
