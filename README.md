@@ -17,11 +17,10 @@
 
 ## Tech Stack
 
-- **Frontend:** React.js
+- **Frontend:** Ejs for dynamic and responsive fronted.
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **Animations:** Three.js, GSAP
-- **Authentication:** JWT (JSON Web Tokens)
+- **Animations:** Three.js, GSAP in Upcoming Updates
 - **Deployment:** [Deployed on your hosting platform if applicable]
 
 ## Getting Started
