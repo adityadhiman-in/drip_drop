@@ -466,3 +466,30 @@ footer p{
   50% { border-color: var(--primaryColor); }
 }
 
+/* Main Game css */
+
+.mainGameNav{
+  margin: 2rem;
+  padding: 1.75rem;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: .5rem;
+}
+.assetsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.whiteColor{
+  color: var(--whiteColor);
+}
+.userControls{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
