@@ -1,22 +1,18 @@
 <%-include("partials/mainGameNav.ejs") %>
 <div class="container my-5">
+  <div class="eventsContainer">
+    <div class="box">
+      <a href="#"> Quiz Of The Day </a>
+    </div>
+    <div class="box">
+      <a href="#"> Watch Ads </a>
+    </div>
+    <div class="box">
+      <a href="#">Latest Events</a>
+    </div>
+  </div>
   <div class="gameContainer">
     <h1 class="text-center">Game Window</h1>
-    <canvas id="gameCanvas" width="800" height="200"></canvas>
-    <div class="scoreContainer">
-      <h2>Score: 0</h2>
-    </div>
-    <div class="controlsContainer">
-      <button id="startButton" class="btn">Start</button>
-      <button id="pauseButton" class="btn">Pause</button>
-    </div>
-    <div class="instructionsContainer">
-      <h3>Instructions</h3>
-      <p>
-        Press the arrow keys to move the character. Avoid the obstacles and
-        reach the end of the level to increase your score.
-      </p>
-    </div>
   </div>
   <%- include("partials/footer.ejs") %>
 </div>

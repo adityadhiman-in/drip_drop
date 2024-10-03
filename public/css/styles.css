@@ -493,3 +493,18 @@ footer p{
   align-items: center;
   justify-content: space-around;
 }
+.eventsContainer{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 0rem;
+}
+.eventsContainer .box{
+  background: var(--primaryColor);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+.eventsContainer .box a{
+  color: var(--whiteColor);
+}
