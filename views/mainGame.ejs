@@ -19,5 +19,14 @@
       </div>
     </div>
   </div>
-  <%- include("partials/footer.ejs") %>
 </div>
+
+<script>
+  const box = document.querySelectorAll(".box");
+  box.forEach((b) => {
+    b.addEventListener("click", () => {
+      alert("You clicked on " + b.querySelector("a").textContent);
+    });
+  });
+</script>
+<%- include("partials/footer.ejs") %>
