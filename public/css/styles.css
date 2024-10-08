@@ -38,7 +38,7 @@ body, html {
 }
 /* Header */
 header {
-  margin: 2rem;
+  margin: 2rem 8rem;
   background-color: var(--primaryColor);
   padding: .5rem 2rem;
   display: flex;
@@ -469,7 +469,7 @@ footer p{
 /* Main Game css */
 
 .mainGameNav{
-  margin: 2rem;
+  margin: 2rem 12rem;
   padding: 1.75rem;
   color: var(--whiteColor);
   background-color: var(--primaryColor);
@@ -508,11 +508,65 @@ footer p{
 .eventsContainer .box a{
   color: var(--whiteColor);
 }
-.mainGame{
-  width: 100%;
-  height: 300px;
-  background: red;
+.mainGameContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
 }
-.assets i{
-  font-size: 7rem;
+.mainGameContainer .game{
+  background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
+  background: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: .5rem;
+  margin-bottom: 5rem;
+}
+.mainGameContainer .game img{
+  width: 12vw;
+}
+.mainGameContainer .game h3{
+  padding-top: 1rem;
+  color: var(--whiteColor);
+  font-size: 1.5rem;
+}
+.gameStartButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+  padding: .5rem 1rem;
+  font-weight: 700;
+}
+.energyRequired{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+.energyRequired i{
+  color: var(--primaryColor);
+  font-weight: 700;
+}
+.game>img{
+  border-radius: .5rem;
+}
+.journeyBuilder{
+  margin: 1rem 2rem;
+  background: linear-gradient(150deg, var(--primaryColor), var(--secondaryColor));
+  padding: 2rem;
+  border-radius: .5rem;
+}
+.journeyBuilder h2{
+  color: var(--whiteColor);
+  font-size: 1.5rem;
+}
+.journeyBuilder p{
+  color: var(--whiteColor);
 }
