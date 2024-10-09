@@ -585,3 +585,15 @@ footer p{
   color: var(--primaryColor);
   font-weight: 600;
 }
+.mainFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.mainFooter .footerItem{
+  background: var(--whiteColor);
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 8vw;
+}

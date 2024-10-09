@@ -30,40 +30,5 @@
         <a class="whiteColor" href="/users/edit-profile">Settings</a>
       </div>
     </div>
-
-    <script>
-      // Set the duration (3 hours in seconds)
-      let duration = 3 * 60 * 60;
-
-      // Function to format time into HH:MM:SS
-      function formatTime(seconds) {
-        const hrs = Math.floor(seconds / 3600);
-        const mins = Math.floor((seconds % 3600) / 60);
-        const secs = Math.floor(seconds % 60);
-        return `${hrs.toString().padStart(2, "0")}:${mins
-          .toString()
-          .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
-      }
-
-      // Function to update the timer
-      function startTimer() {
-        const timerElement = document.getElementById("timer");
-        let timeRemaining = duration;
-
-        // Update the timer every second
-        const interval = setInterval(() => {
-          timerElement.textContent = formatTime(timeRemaining);
-          timeRemaining--;
-
-          // When the countdown reaches 0, reset to 3 hours
-          if (timeRemaining < 0) {
-            timeRemaining = duration;
-          }
-        }, 1000);
-      }
-
-      // Start the timer
-      startTimer();
-    </script>
   </body>
 </html>
