@@ -498,7 +498,8 @@ footer p{
   gap: 2rem;
   align-items: center;
   justify-content: space-around;
-  margin: 5rem 0rem;
+  margin: 2rem 0rem;
+  display: none;
 }
 .eventsContainer .box{
   background: var(--primaryColor);
@@ -562,6 +563,12 @@ footer p{
   background: linear-gradient(150deg, var(--primaryColor), var(--secondaryColor));
   padding: 2rem;
   border-radius: .5rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.journeyBuilder .content{
+  width: 50%;
 }
 .journeyBuilder h2{
   color: var(--whiteColor);
@@ -569,4 +576,12 @@ footer p{
 }
 .journeyBuilder p{
   color: var(--whiteColor);
+}
+.journeyBuilder .btn {
+  background: var(--whiteColor);
+  color: var(--primaryColor);
+}
+.journeyBuilder .btn a{
+  color: var(--primaryColor);
+  font-weight: 600;
 }
