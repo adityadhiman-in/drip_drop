@@ -284,7 +284,7 @@ footer p{
 
   .mission-section {
     margin-top: 2rem;
-    background-color: #f0d0df;
+    background-color: var(--tertiaryColor);
     padding: 2rem;
     border-radius: 8px;
     animation: fadeInUp 2s ease-in-out;
