@@ -589,11 +589,14 @@ footer p{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
+  padding: .25rem;
 }
 .mainFooter .footerItem{
   background: var(--whiteColor);
-  padding: 1rem;
+  padding: .5rem;
   border-radius: .5rem;
-  width: 8vw;
+  border-radius: 50%;
+}
+.footerItem i{
+  font-size: 1.75rem;
 }
