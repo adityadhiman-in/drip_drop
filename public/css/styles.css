@@ -399,7 +399,7 @@ footer p{
   background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
   min-height: 65vh;
   color: var(--whiteColor);
-  margin: 3.5rem;
+  margin: 4% 8%;
   border-radius: .5rem;
 }
 
