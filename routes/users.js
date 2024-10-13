@@ -132,4 +132,9 @@ router.get("/story", (req, res)=>{
   res.render("story");
 })
 
+// @route GET /rewards
+router.get("/rewards", ensureAuthenticated, (req, res)=>{
+  res.render("rewards", { user: req.user, rewards : ''});
+});
+
 export default router;
