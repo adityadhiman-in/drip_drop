@@ -2,9 +2,12 @@ import express from 'express';
 import passport from 'passport';
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
-import { ensureAuthenticated } from '../middleware/auth.js'; // Import middleware to protect routes
+import { ensureAuthenticated, setUser } from '../middleware/auth.js';
 
 const router = express.Router();
+
+// Apply setUser middleware to pass user info to all routes
+router.use(setUser);
 
 // @route   GET /users/login
 router.get('/login', (req, res) => res.render('login', { error_msg: req.flash('error_msg') }));
@@ -116,25 +119,34 @@ router.get('/about', (req, res) => {
   res.render('about'); // Renders the about page
 });
 
-
 // @route   GET /play
-router.get("/play", ensureAuthenticated, (req, res)=>{
-  res.render("play",{ user: req.user });
-})
- 
-// @route GET /maingame
-router.get("/playgame", ensureAuthenticated, (req, res)=>{
-  res.render("mainGame");
+router.get('/play', ensureAuthenticated, (req, res) => {
+  res.render('play', { user: req.user });
 });
 
-// @route GET /story
-router.get("/story", (req, res)=>{
-  res.render("story");
-})
+// @route   GET /playgame
+router.get('/playgame', ensureAuthenticated, (req, res) => {
+  res.render('mainGame');
+});
 
-// @route GET /rewards
-router.get("/rewards", ensureAuthenticated, (req, res)=>{
-  res.render("rewards", { user: req.user, rewards : ''});
+// @route   GET /story
+router.get('/story', (req, res) => {
+  res.render('story');
+});
+
+// @route   GET /rewards
+router.get('/rewards', ensureAuthenticated, (req, res) => {
+  const rewards = ''; // Replace with actual rewards fetching logic
+  res.render('rewards', { user: req.user, rewards });
+});
+// POST route to build the town (protected route)
+router.get('/build', ensureAuthenticated, (req, res) => {
+  res.render("build")
+});
+
+// @route   GET /memoryMatch
+router.get('/memorymatch', ensureAuthenticated, (req, res) => {
+  res.render('memoryMatch'); 
 });
 
 export default router;

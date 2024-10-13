@@ -1,0 +1,14 @@
+<%- include("../partials/mainGameHeader.ejs") %>
+<div class="container my-5">
+  <h1>Memory Match Game</h1>
+  <div class="game-container">
+    <div id="gameBoard" class="game-board"></div>
+  </div>
+  <div class="score">
+    <p>Moves: <span id="moveCounter">0</span></p>
+  </div>
+  <button id="resetButton">Reset Game</button>
+</div>
+
+<% if (user) { %> <%- include("partials/mainGameFooter.ejs") %> <% } else { %>
+<%- include("partials/footer.ejs") %> <% } %>

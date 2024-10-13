@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import session from 'express-session';
 import flash from 'connect-flash';
-import passport from './config/passport.js'; 
+import passport from './config/passport.js';
 import methodOverride from 'method-override';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -55,6 +55,7 @@ app.use((req, res, next) => {
   res.locals.error_msg = req.flash('error_msg');
   res.locals.error = req.flash('error');
   res.locals.loggedIn = req.isAuthenticated();
+  res.locals.user = req.isAuthenticated() ? req.user : null; // Set user variable
   next();
 });
 

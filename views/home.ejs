@@ -9,6 +9,6 @@
 
     <a href="/users/play" class="btn">Play Now</a>
   </div>
-
-  <%- include("partials/footer.ejs") %>
 </div>
+<% if (user) { %> <%- include("partials/mainGameFooter.ejs") %> <% } else { %>
+<%- include("partials/footer.ejs") %> <% } %>

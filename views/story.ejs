@@ -65,5 +65,5 @@
   // Initially display the first chapter
   displayText(chapters[currentChapter]);
 </script>
-
-<%- include("partials/footer.ejs") %>
+<% if (user) { %> <%- include("partials/mainGameFooter.ejs") %> <% } else { %>
+<%- include("partials/footer.ejs") %> <% } %>

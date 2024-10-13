@@ -13,4 +13,5 @@
     <% } %>
   </div>
 </main>
-<%- include("partials/mainGameFooter.ejs") %>
+<% if (user) { %> <%- include("partials/mainGameFooter.ejs") %> <% } else { %>
+<%- include("partials/footer.ejs") %> <% } %>
