@@ -30,7 +30,7 @@
 Ensure you have the following installed:
 
 - Node.js (v14 or above)
-- MongoDB
+- MongoDB or MongoDB Cloud Servers
 - NPM or Yarn
 
 ### Installation
