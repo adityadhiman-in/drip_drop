@@ -4,7 +4,7 @@
 
 ## Introduction
 
-**Drip Drop** is an interactive storyline game focused on educating users about the importance of conserving groundwater. You take on the role of a villager responsible for implementing water-saving strategies to help your village survive drought. Complete tasks, upgrade resources, and manage your water supply as you progress through the game.
+**Drip Drop** is an interactive storyline game focused on educating users about the importance of conserving groundwater. You take on the role of a villager responsible for implementing water-saving strategies to help your village survive drought. Play different games, earn aquacoins from them and Complete tasks, upgrade resources, and manage your water supply as you progress through the game.
 
 ## Features
 
