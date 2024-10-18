@@ -1,6 +1,6 @@
 # Drip Drop - Groundwater Conservation Game
 
-![Preview](image.png)
+![Preview Image](image.png)
 
 ## Introduction
 
