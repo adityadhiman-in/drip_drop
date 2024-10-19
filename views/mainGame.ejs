@@ -13,52 +13,56 @@
   </div>
   <div class="journeyBuilder">
     <div class="content">
-    <h2>Your Dream Town</h2>
-    <p>
-      Continue Building Your Dream Town and Upgrade Your Level To win exciting
-      prizes
-    </p></div>
-    <div class="btn">
-    <a href="#">Build Now</a>
+      <h2>Your Dream Town</h2>
+      <p>
+        Continue Building Your Dream Town and Upgrade Your Level To win exciting
+        prizes
+      </p>
     </div>
-</div>
-    <div class="gameContainer">
-      <div class="mainGameContainer">
-        <div class="game">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSU5JCFKu_d4gAhQELn2QQg8FkTJrbYnzbpB7C28JoUoW05n68eBFQLeseb4XAKxnTEo&usqp=CAU"
-            alt="game image"
-          />
-          <h3>Memory Match</h3>
-          <div class="btns">
-            <a href="/users/memorymatch">
+    <div class="btn">
+      <a href="/users/build" class=".buildNow">Build Now</a>
+    </div>
+  </div>
+  <div class="gameContainer">
+    <div class="mainGameContainer">
+      <div class="game">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSU5JCFKu_d4gAhQELn2QQg8FkTJrbYnzbpB7C28JoUoW05n68eBFQLeseb4XAKxnTEo&usqp=CAU"
+          alt="game image"
+        />
+        <h3>Memory Match</h3>
+        <div class="btns">
+          <a href="/users/memorymatch">
             <button class="btn gameStartButton">
               Start Game
               <span class="energyRequired">
-                <i class="whiteColor ri-water-flash-line"></i> 10</span
-              ></a>
-            </button></a>
-          </div>
+                <i class="whiteColor ri-water-flash-line"></i> 10
+              </span>
+            </button>
+          </a>
         </div>
-        <div class="game">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSU5JCFKu_d4gAhQELn2QQg8FkTJrbYnzbpB7C28JoUoW05n68eBFQLeseb4XAKxnTEo&usqp=CAU"
-            alt="game image"
-          />
-          <h3>Tic Tac Toe</h3>
-          <div class="btns">
-            <button class="btn gameStartButton"><a href="/users/memoryMatch">
+      </div>
+      <div class="game">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSU5JCFKu_d4gAhQELn2QQg8FkTJrbYnzbpB7C28JoUoW05n68eBFQLeseb4XAKxnTEo&usqp=CAU"
+          alt="game image"
+        />
+        <h3>Tic Tac Toe</h3>
+        <div class="btns">
+          <a href="/users/memoryMatch">
+            <button class="btn gameStartButton">
               Start Game
               <span class="energyRequired">
-                <i class="whiteColor ri-water-flash-line"></i> 10</span
-              >
+                <i class="whiteColor ri-water-flash-line"></i> 10
+              </span>
             </button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
+<%-include("partials/mainGameFooter.ejs") %>
 
 <script>
   const box = document.querySelectorAll(".box");
@@ -68,4 +72,3 @@
     });
   });
 </script>
-<%-include("partials/mainGameFooter.ejs") %>

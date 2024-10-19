@@ -7,20 +7,17 @@ body {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  padding: 0 30rem;
 }
 
 .game-board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  margin: 0px 0;
 }
 
 .card {
   width: 30px;
   height: 30px;
-  background-color: #007bff;
+  background-color: var(--primaryColor);
   color: white;
   font-size: 24px;
   display: flex;
@@ -32,7 +29,7 @@ body {
 }
 
 .card.flipped {
-  background-color: #28a745;
+  background-color: #000000;
   transform: scale(1.1);
 }
 
