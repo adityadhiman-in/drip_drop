@@ -449,11 +449,11 @@ footer p{
 }
 
 #playButton {
-  background-color: #28a745;
+  background-color: var(--primaryColor);
 }
 
 #playButton:hover {
-  background-color: #218838;
+  background-color: var(--blackColor);
 }
 
 @keyframes typing {
