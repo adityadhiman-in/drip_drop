@@ -8,6 +8,8 @@
 
 ## Features
 
+![alt text](image-1.png)
+
 - **Interactive Gameplay:** Engage in water conservation by completing tasks to build and upgrade your village.
 - **Water Coins:** Earn and manage water coins to enhance village assets like water tanks and fields.
 - **Quizzes & Events:** Participate in quizzes and events to earn extra rewards and level up.
