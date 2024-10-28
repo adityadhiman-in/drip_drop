@@ -600,3 +600,9 @@ footer p{
 .footerItem i{
   font-size: 1.75rem;
 }
+.rewardsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column ;
+}
