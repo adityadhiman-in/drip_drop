@@ -58,6 +58,10 @@ Ensure you have the following installed:
    node server.js or nodemon server.js
    ```
 
+## Contributions
+
+We are open for the suggestions and contributions, To contribute follow the given process
+
 ## Contact
 
 Feel free to reach out if you have any questions or suggestions!
