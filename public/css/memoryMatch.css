@@ -7,16 +7,27 @@ body {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .game-board {
+  width: 300px;
+  height: 300px;
   display: grid;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 3rem;
 }
 
 .card {
-  width: 30px;
-  height: 30px;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
   background-color: var(--primaryColor);
   color: white;
   font-size: 24px;
