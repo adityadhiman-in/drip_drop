@@ -1,0 +1,28 @@
+<%-include("partials/mainGameHeader.ejs") %>
+<link rel="stylesheet" href="/css/waterDropCatcher.css" />
+<div class="wtr">
+  <div class="game-container">
+    <header class="game-header">
+      <h1>Water Drop Catcher</h1>
+      <div class="score-board">
+        <span>Score: </span><span id="score">0</span>
+      </div>
+    </header>
+
+    <div class="game-area">
+      <!-- Catcher / Bucket -->
+      <div class="bucket" id="bucket"></div>
+
+      <!-- Water Drops Container -->
+      <div class="drops-container" id="drops-container">
+        <!-- Water drops will fall here -->
+      </div>
+    </div>
+
+    <footer class="game-footer">
+      <button id="start-btn" class="start-btn">Start Game</button>
+    </footer>
+  </div>
+</div>
+<script src="/js/waterDropCatcher.js"></script>
+<%- include("partials/mainGameFooter.ejs") %>

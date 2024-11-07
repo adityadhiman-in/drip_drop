@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa;
+  }
+  
+  .game-container {
+    text-align: center;
+    width: 300px;
+  }
+  
+  .game-header h1 {
+    font-size: 24px;
+    color: #00796b;
+  }
+  
+  .score-board {
+    font-size: 18px;
+    color: #004d40;
+  }
+  
+  .game-area {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #b2dfdb;
+    border: 2px solid #004d40;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .bucket {
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 30px;
+    background-color: #00796b;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .drops-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .water-drop {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #03a9f4;
+    border-radius: 50%;
+  }
+  
+  .start-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #004d40;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

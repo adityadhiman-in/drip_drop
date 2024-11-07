@@ -153,4 +153,10 @@ router.get("/memorymatch", ensureAuthenticated, (req, res) => {
   res.render("memoryMatch");
 });
 
+// @route   GET /waterdropcatcher
+// @desc    Play the Water Drop Catcher game
+router.get("/waterdropcatcher", ensureAuthenticated, (req, res) => {
+  res.render("waterDropCatcher", { user: req.user }); // Pass user data if needed
+});
+
 export default router;
